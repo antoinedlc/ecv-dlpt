@@ -1,0 +1,15 @@
+// Never change this value
+$f-icon-path-from-css: "../fonts/icon/";
+
+// Fonts
+$roboto: "Roboto Mono", monospace;
+
+// Grid variables
+$grid-max-width: 132rem;
+$grid-mobile-padding: 0 2.4rem;
+$grid-default-gap:  2.4rem;
+
+// Animations
+$anim-duration: 250ms;
+$anim-easing: cubic-bezier(.55, 0, .1, 1);
+$anim: $anim-duration $anim-easing;

@@ -1,0 +1,21 @@
+@layer components {
+    nav {
+        @apply fixed top-0 left-0 w-100 py-2 z-20;
+        backdrop-filter: blur(1.2rem);
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+
+        &::before {
+            @apply block absolute left-0 top-0 w-100 h-100 bg-white z-30;
+            content: "";
+            opacity: 0.75;
+        }
+
+        a {
+            @apply mx-4 font-400 relative z-40;
+
+            &.contact {
+                @apply px-4 py-1_25 bg-black text-white rounded-1;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+
+
+
+@import './abstracts/mixins';
+@import './abstracts/variables';
+@import './abstracts/helpers';
+
+@import './global/grid';
+@import './global/fonts';
+@import './global/typography';
+@import './global/icons';
+
+@import './atoms/images';
+
+@import './molecules/nav';
+@import './molecules/book_cards';
+@import './molecules/cursed_images_cards';
+
+
+
+@layer base {
+  html {
+    font-size: 62.5%;
+    @apply bg-white;
+  }
+  
+  body {
+    @apply text-15 leading-1_2 font-300 overflow-x-hidden text-black;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+
+
+@tailwind utilities;

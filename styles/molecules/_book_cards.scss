@@ -1,0 +1,9 @@
+@layer components {
+    .card-book {
+        box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+
+        &:hover {
+            transform: translateY(-1.6rem);
+        }
+    }
+}

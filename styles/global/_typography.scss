@@ -1,0 +1,33 @@
+@layer components {
+    @variants responsive, hover {
+        // Specific paragraphs
+
+
+
+        // Titles
+    }
+}
+
+@layer base {
+    p {
+        @apply mb-1;
+        color: inherit;
+
+        &:last-of-type {
+            @apply mb-0;
+        }
+    }
+
+    span {
+        @apply w-content;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 0;
+        color: inherit;
+    }
+}

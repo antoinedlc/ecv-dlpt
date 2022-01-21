@@ -1,0 +1,54 @@
+@layer utilities {
+    @variants responsive, hover, focus {
+        @for $i from 1 through 10{
+            @for $j from 1 through 10 {
+                .ratio-#{$i}-#{$j} {
+                    aspect-ratio: #{$i} / #{$j};
+                }
+            }
+        }
+
+        @for $i from 1 through 100{
+            .pb-#{$i}-percent {
+                padding-bottom: #{$i * 1%};
+            }
+        }
+
+        @for $i from 1 through 100{
+            .lh-#{$i}-px {
+                line-height: #{$i * 1px} !important;
+            }
+        }
+
+        @for $i from 1 through 200{
+            .img-pb-#{$i} {
+                content: "";
+
+                &::before {
+                    width: 100%;
+                    display: block;
+                    content: "";
+                    padding-bottom: #{$i * 1%};
+                }
+            }
+        }
+
+        .bg-classic {
+            @apply bg-top bg-cover bg-no-repeat;
+        }
+
+        .absolute-classic {
+            @apply absolute top-50 left-50;
+            --tw-translate-x: -50%;
+            --tw-translate-y: -50%;
+        }
+
+        .empty {
+            content: "";
+        }
+
+        .anim {
+            transition: $anim;
+        }
+    }
+}

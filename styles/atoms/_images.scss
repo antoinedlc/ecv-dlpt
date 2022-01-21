@@ -1,0 +1,22 @@
+@layer components {
+    .img {
+        @apply bg-classic relative w-full;
+
+        &.square {
+            &::before {
+                @apply empty w-full pb-100-percent block;
+            }
+        }
+
+        &.thumbnail {
+            @apply ratio-10-8 bg-left bg-contain;
+        }
+    }
+
+    .img--book-hero {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: "";
+    }
+}
